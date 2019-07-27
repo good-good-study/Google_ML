@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ml_type">
+        <item>图像标签</item>
+        <item>文本识别(ocr)</item>
+        <item>人脸检测（包括脸部轮廓）</item>
+        <item>条形码识别</item>
+        <item>语言识别</item>
+        <item>翻译</item>
+    </string-array>
+</resources>

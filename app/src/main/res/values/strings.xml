@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">ML</string>
+    <string name="permission_denied">Permission Denied</string>
+    <string name="content_is_empty">当前啥都没有哟</string>
+    <string name="error_request_data">数据请求失败,请稍后再试</string>
+    <string name="message_alert">温馨提示</string>
+
+    <string name="google_ml">Google ML</string>
+    <string name="login_out">退出登录</string>
+    <string name="login">登录</string>
+    <string name="cache_size">%sM</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+    <string name="done">完成</string>
+    <string name="open">开启</string>
+    <string name="close">关闭</string>
+    <string name="take_photo">拍摄</string>
+    <string name="take_photo_reset">重新拍摄</string>
+    <string name="just_a_moment">请稍后</string>
+
+    <string name="permission_request_READ_EXTERNAL_STORAGE">您需要在设备的设置中\n允许%s获取手机存储的权限才能继续哟~</string>
+    <string name="permission_request_READ_CONTACTS">还未获取到相应权限哦,您可以到手机设置中允许i智护访问手机通讯录的权限哟</string>
+    <string name="permission_request_CAMERA">您需要在设备的设置中\n允许%s获取访问手机拍照的权限才能继续哟~</string>
+    <string name="permission_request_CALL_PHONE">您需要在设备的设置中\n允许%s获取打电话的权限才能继续哟~</string>
+    <string name="permission_request_WiFi">还未获取到相应权限哦,您可以到手机设置中允许%s使用位置和WiFi权限哟~</string>
+    <string name="permission_request_LOCATION">您需要在设备的设置中\n允许%s获取位置的权限才能继续哟~</string>
+
+</resources>

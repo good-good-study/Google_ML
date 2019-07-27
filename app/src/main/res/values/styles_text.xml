@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="base_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="text_color_1_22_style" parent="base_text_style">
+        <item name="android:textSize">22dp</item>
+        <item name="android:textColor">@color/text_color_1</item>
+    </style>
+
+    <style name="text_color_1_17_style" parent="base_text_style">
+        <item name="android:textSize">17dp</item>
+        <item name="android:textColor">@color/text_color_1</item>
+    </style>
+
+    <style name="text_color_1_17_bold_style" parent="base_text_style">
+        <item name="android:textSize">17dp</item>
+        <item name="android:textColor">@color/text_color_1</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_color_1_20_style" parent="base_text_style">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/text_color_1</item>
+    </style>
+
+    <style name="text_color_2_17_style" parent="base_text_style">
+        <item name="android:textSize">17dp</item>
+        <item name="android:textColor">@color/text_color_2</item>
+    </style>
+
+    <style name="text_color_3_17_style" parent="base_text_style">
+        <item name="android:textSize">17dp</item>
+        <item name="android:textColor">@color/text_color_3</item>
+    </style>
+
+    <style name="text_color_1_15_style" parent="base_text_style">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/text_color_1</item>
+    </style>
+
+    <style name="text_color_1_14_style" parent="base_text_style">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/text_color_1</item>
+    </style>
+
+    <style name="text_color_1_13_style" parent="base_text_style">
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">@color/text_color_1</item>
+    </style>
+
+    <style name="text_color_1_12_style" parent="base_text_style">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/text_color_1</item>
+    </style>
+
+    <style name="text_color_1_10_style" parent="base_text_style">
+        <item name="android:textSize">10dp</item>
+        <item name="android:textColor">@color/text_color_1</item>
+    </style>
+
+    <style name="text_color_white_15_style" parent="base_text_style">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="text_color_2_15_style" parent="base_text_style">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/text_color_2</item>
+    </style>
+
+    <style name="text_color_2_14_style" parent="base_text_style">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/text_color_2</item>
+    </style>
+
+    <style name="text_color_2_13_style" parent="base_text_style">
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">@color/text_color_2</item>
+    </style>
+
+    <style name="text_color_2_12_style" parent="base_text_style">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/text_color_2</item>
+    </style>
+
+
+    <style name="text_color_3_15_style" parent="base_text_style">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/text_color_3</item>
+    </style>
+
+    <style name="text_color_3_14_style" parent="base_text_style">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/text_color_3</item>
+    </style>
+
+    <style name="text_color_3_13_style" parent="base_text_style">
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">@color/text_color_3</item>
+    </style>
+
+    <style name="text_color_3_12_style" parent="base_text_style">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/text_color_3</item>
+    </style>
+
+    <style name="text_color_black_18_style" parent="base_text_style">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="text_color_black_15_style" parent="base_text_style">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="text_color_black_15_bold_style" parent="base_text_style">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_color_black_14_style" parent="base_text_style">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="text_color_main_blue_14_style" parent="base_text_style">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/main_blue</item>
+    </style>
+
+    <style name="text_color_main_blue_15_style" parent="base_text_style">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/main_blue</item>
+    </style>
+
+    <style name="text_color_main_blue_17_tyle" parent="base_text_style">
+        <item name="android:textSize">17dp</item>
+        <item name="android:textColor">@color/main_blue</item>
+    </style>
+
+    <style name="text_color_main_blue_20_style" parent="base_text_style">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/main_blue</item>
+    </style>
+
+    <style name="text_color_white_17_style" parent="base_text_style">
+        <item name="android:textSize">17dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="text_color_white_20_style" parent="base_text_style">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="text_color_white_22_style" parent="base_text_style">
+        <item name="android:textSize">22dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="text_color_main_orange_14_style" parent="base_text_style">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/main_orange</item>
+    </style>
+
+    <!--menu样式-->
+    <style name="menu_style">
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/text_color_1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">?selectableItemBackground</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingStart">15dp</item>
+        <item name="android:paddingTop">8dp</item>
+    </style>
+
+    <style name="ContentText" parent="base_text_style">
+        <item name="android:layout_margin">5dip</item>
+    </style>
+
+    <style name="bottom_navigation_bar_text_active_style">
+        <item name="android:textSize">13dp</item>
+    </style>
+
+    <style name="bottom_navigation_bar_text_inactive_style">
+        <item name="android:textSize">13dp</item>
+    </style>
+
+    <style name="AppTheme.AdAttribution" parent="base_text_style">
+        <item name="android:layout_gravity">left</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:text">Ad</item>
+        <item name="android:background">#FFCC66</item>
+        <item name="android:width">15dp</item>
+        <item name="android:height">15dp</item>
+    </style>
+
+    <style name="toolbar_center_title_appearance">
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>
