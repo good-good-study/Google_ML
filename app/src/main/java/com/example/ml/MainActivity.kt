@@ -9,6 +9,7 @@ import android.text.SpannableString
 import android.text.Spanned
 import android.text.style.TextAppearanceSpan
 import android.view.View
+import android.widget.AdapterView
 import android.widget.ImageView
 import android.widget.Spinner
 import android.widget.TextView
@@ -40,6 +41,7 @@ class MainActivity : BaseActivity() {
     private var result: TextView? = null
     private val file: File? = null
     private var appBarLayout: AppBarLayout? = null
+    private var index: Int? = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -49,6 +51,15 @@ class MainActivity : BaseActivity() {
         val spinner = findViewById<Spinner>(R.id.spinner)
         spinner.post {
             spinner.dropDownVerticalOffset = spinner.height.times(1.1).toInt()
+            spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+                override fun onItemSelected(parent: AdapterView<*>, view: View, position: Int, id: Long) {
+                    index = position
+                }
+
+                override fun onNothingSelected(parent: AdapterView<*>) {
+
+                }
+            }
         }
         appBarLayout!!.post { appBarLayout!!.setExpanded(false) }
     }
@@ -60,7 +71,23 @@ class MainActivity : BaseActivity() {
             val uri = Uri.fromFile(file)
             imageView.setImageURI(uri)
             showDialog()
-            processImageBarCode(uri)
+            when (index) {
+                0 -> {
+                    processImageText(uri)
+                }
+                1 -> {
+                    processImageLabel(uri)
+                }
+                2 -> {
+                    processImageFace(uri)
+                }
+                3 -> {
+                    processImageBarCode(uri)
+                }
+                else -> {
+                    processLanuage()
+                }
+            }
         }
     }
 
