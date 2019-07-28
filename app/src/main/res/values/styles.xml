@@ -16,7 +16,7 @@
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowBackground">@color/white</item>
         <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
-        <item name="android:navigationBarColor" tools:targetApi="lollipop">@color/main_body</item>
+        <item name="android:navigationBarColor" tools:targetApi="lollipop">@color/white</item>
     </style>
 
     <style name="editText_style" parent="Theme.AppCompat.DayNight">
@@ -49,7 +49,7 @@
         <item name="android:windowBackground">@mipmap/splash_holder</item>-->
     </style>
 
-    <style name="VrTheme" parent="android:Theme.Material" tools:targetApi="lollipop" />
+    <style name="VrTheme" parent="android:Theme.Material" tools:targetApi="lollipop"/>
 
     <style name="divider_line">
         <item name="android:background">@color/dividing_line</item>
@@ -70,7 +70,7 @@
     </style>
 
     <!--popup window 的亮色主题-->
-    <style name="PopupMenuStyle" parent="@style/ThemeOverlay.AppCompat.Light" />
+    <style name="PopupMenuStyle" parent="@style/ThemeOverlay.AppCompat.Light"/>
 
 
 </resources>

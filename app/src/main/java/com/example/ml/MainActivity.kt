@@ -8,11 +8,14 @@ import android.os.Bundle
 import android.text.SpannableString
 import android.text.Spanned
 import android.text.style.TextAppearanceSpan
+import android.util.Log
 import android.view.View
+import android.view.WindowManager
 import android.widget.AdapterView
 import android.widget.ImageView
 import android.widget.Spinner
 import android.widget.TextView
+import androidx.core.content.ContextCompat
 import com.google.android.material.appbar.AppBarLayout
 import com.google.firebase.ml.naturallanguage.FirebaseNaturalLanguage
 import com.google.firebase.ml.naturallanguage.translate.FirebaseTranslateLanguage
@@ -28,6 +31,7 @@ import com.google.firebase.ml.vision.face.FirebaseVisionFaceLandmark
 import com.google.firebase.ml.vision.label.FirebaseVisionImageLabel
 import com.google.firebase.ml.vision.text.FirebaseVisionText
 import java.io.File
+import kotlin.math.abs
 
 /**
  * Created by 11837 on 2018/6/5.
@@ -46,6 +50,10 @@ class MainActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            window.statusBarColor = ContextCompat.getColor(this, android.R.color.transparent)
+            window.navigationBarColor = ContextCompat.getColor(this, android.R.color.white)
+        }
         result = findViewById(R.id.result)
         appBarLayout = findViewById(R.id.appbar_layout)
         val spinner = findViewById<Spinner>(R.id.spinner)
@@ -61,7 +69,35 @@ class MainActivity : BaseActivity() {
                 }
             }
         }
-        appBarLayout!!.post { appBarLayout!!.setExpanded(false) }
+        appBarLayout!!.post {
+            appBarLayout!!.addOnOffsetChangedListener(AppBarLayout.OnOffsetChangedListener { appBarLayout, offset ->
+                val max = appBarLayout!!.totalScrollRange
+                if (offset == 0) {//完全展开
+                    setStatusBarLight(true)
+                } else if (abs(offset) == max) {//完全折叠
+                    setStatusBarLight(false)
+                }
+            })
+            appBarLayout!!.setExpanded(false)
+        }
+    }
+
+    private fun setStatusBarLight(isLight: Boolean) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            Log.e("ml", "isLight : $isLight")
+            if (isLight) {
+                window.decorView.systemUiVisibility = (View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR)
+                window.statusBarColor = ContextCompat.getColor(this, R.color.translate_alpha)
+            } else {
+                window.decorView.systemUiVisibility = (View.SYSTEM_UI_FLAG_VISIBLE)
+                window.statusBarColor = ContextCompat.getColor(this, android.R.color.transparent)
+            }
+        }
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+//            window.decorView.systemUiVisibility = (
+//                    View.SYSTEM_UI_FLAG_LAYOUT_STABLE//防止系统栏隐藏时内容区域大小发生变化
+//                    )
+        }
     }
 
     private fun startML(imgPath: String?) {
